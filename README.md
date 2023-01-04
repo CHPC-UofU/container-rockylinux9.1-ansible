@@ -66,4 +66,4 @@ This image is built on GitHub automatically any time a commit is made or merged 
 
 ## Author
 
-Derived from [geerlingguy/docker-rockylinux8-ansible](https://github.com/geerlingguy/docker-rockylinux8-ansible).
+Derived from [geerlingguy/docker-rockylinux9-ansible](https://github.com/geerlingguy/docker-rockylinux9-ansible).
