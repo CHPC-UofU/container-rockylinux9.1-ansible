@@ -38,13 +38,6 @@ jobs:
           load: true
           tags: "container-ansible:test"
 
-      - name: Debugging info
-        working-directory: .
-        run: |
-          docker run --name debugging -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro container-ansible:test
-          docker container ls
-          docker container inspect debugging
-
       - name: Run image
         working-directory: .
         run: |
