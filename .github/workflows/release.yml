@@ -48,7 +48,7 @@ jobs:
       - name: Run image
         working-directory: .
         run: |
-          docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro container-ansible:test
+          docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host container-ansible:test
 
       - name: Test image
         working-directory: .
